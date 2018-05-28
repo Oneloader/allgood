@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+//$this->title = 'My Yii Application';
 ?>
 <section id="hero-banner">
     <div class="banner-inner">
@@ -17,6 +17,7 @@ $this->title = 'My Yii Application';
             </div>
         </div>
     </div>
+    <span style="font-size: 8px;float: right;padding-top: 120px;padding-right: 30px;color: #343434">* 位于北京奥林匹克公园的汉能中心</span>
 </section><!--/#main-slider-->
 <section id="features">
     <div class="container">
@@ -31,10 +32,10 @@ $this->title = 'My Yii Application';
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
                 <ul class="listarrow">
                     <li><i class="fa fa-angle-double-right"></i>专业的安装团队</li>
-                    <li><i class="fa fa-angle-double-right"></i>优秀的品质</li>
+                    <li><i class="fa fa-angle-double-right"></i>优秀的商品品质</li>
+                    <li><i class="fa fa-angle-double-right"></i>实在的商品价格</li>
+                    <li><i class="fa fa-angle-double-right"></i>良好的服务口碑</li>
                     <li><i class="fa fa-angle-double-right"></i></li>
-                    <li><i class="fa fa-angle-double-right"></i>MySQL Databases</li>
-                    <li><i class="fa fa-angle-double-right"></i>Unlimited Bandwidth</li>
                     <li><i class="fa fa-angle-double-right"></i>Web Secutity</li>
                 </ul>
             </div>

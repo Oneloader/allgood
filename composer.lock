@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75d5ffb7fe5a3637685fef32f7ed2e61",
+    "content-hash": "de033ee29df3f32ba130f62c12a113c6",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -166,6 +166,50 @@
                 "markdown-extra"
             ],
             "time": "2018-03-26T11:25:22+00:00"
+        },
+        {
+            "name": "creocoder/yii2-nested-sets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/creocoder/yii2-nested-sets.git",
+                "reference": "3c7d07638da36037805ce8ea79bbefc950a61ee1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/creocoder/yii2-nested-sets/3c7d07638da36037805ce8ea79bbefc950a61ee1.zip",
+                "reference": "3c7d07638da36037805ce8ea79bbefc950a61ee1",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "~1.0",
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "creocoder\\nestedsets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com"
+                }
+            ],
+            "description": "The nested sets behavior for the Yii framework",
+            "keywords": [
+                "nested sets",
+                "yii2"
+            ],
+            "time": "2017-01-31T09:48:06+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -3820,7 +3864,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "creocoder/yii2-nested-sets": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

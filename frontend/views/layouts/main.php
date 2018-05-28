@@ -189,7 +189,7 @@ AppAsset::register($this);
 </footer>
 <?php $this->endBody() ?>
 </body>
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<!--<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>-->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/mousescroll.js"></script>

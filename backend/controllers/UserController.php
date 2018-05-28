@@ -57,7 +57,7 @@ class UserController extends Controller{
     }
 
 //    //修改用户
-    public function actionEdit($name){
+    public function actionEdit(){
         if (\Yii::$app->user->isGuest){
             return $this->redirect(['login']);
         }
