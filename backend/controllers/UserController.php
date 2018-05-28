@@ -9,6 +9,7 @@ use yii\web\Request;
 
 class UserController extends Controller{
 
+    public $enableCsrfValidation = false;
     //用户列表
     public function actionIndex(){
         $model = User::find()->all();

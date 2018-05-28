@@ -19,7 +19,7 @@
             <td>TIME</td>
             <td>IP</td>
             <td>
-                <?=\yii\bootstrap\Html::a('修改',['user/edit'],['class'=>'btn btn-success'])?>
+                <?=\yii\bootstrap\Html::a('修改',['user/edit','name'=>$users->username],['class'=>'btn btn-success'])?>
                 <a id="del" class="btn btn-danger">删除</a>
             </td>
         </tr>

@@ -9,11 +9,10 @@ $this->title = 'My Yii Application';
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-
-                    <h2><b>泉佳</b> 光伏产业</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisici <br/> Praesent eget risus.</p>
-                    <a class="btn btn-primary btn-lg" href="#">现在进入</a>
-
+                        <h2 style="font-size: 32px"><b>泉佳</b> 光伏产业</h2>
+                        <p style="font-size: 46px;font-weight: bolder;letter-spacing:10px ">用薄膜太阳能改变世界</p>
+                    <p style="font-size: 16px;font-weight: lighter;">CHANGE THE WORLD WITH THIN-FILM SOLAR.</p>
+                        <a class="btn btn-primary btn-lg" href="#">现在进入</a>
                 </div>
             </div>
         </div>
@@ -22,18 +21,18 @@ $this->title = 'My Yii Application';
 <section id="features">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Our Features</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">关于泉佳</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
         <div class="row FeatLayout">
-            <div class="col-md-5 Featimg"> <img src="images/features_img.png" alt="feature" class="img-responsive center-block"></div>
+            <div class="col-md-5 Featimg"> <img src="images/features.jpg" alt="汉瓦产品" class="img-responsive center-block" ></div>
             <div class="col-md-7">
-                <h2>We Make your life easy</h2>
+                <h2>我们坚持做瓦10年</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
                 <ul class="listarrow">
-                    <li><i class="fa fa-angle-double-right"></i>Special Domain</li>
-                    <li><i class="fa fa-angle-double-right"></i>Web Builder</li>
-                    <li><i class="fa fa-angle-double-right"></i>cPanel Access</li>
+                    <li><i class="fa fa-angle-double-right"></i>专业的安装团队</li>
+                    <li><i class="fa fa-angle-double-right"></i>优秀的品质</li>
+                    <li><i class="fa fa-angle-double-right"></i></li>
                     <li><i class="fa fa-angle-double-right"></i>MySQL Databases</li>
                     <li><i class="fa fa-angle-double-right"></i>Unlimited Bandwidth</li>
                     <li><i class="fa fa-angle-double-right"></i>Web Secutity</li>
@@ -46,7 +45,7 @@ $this->title = 'My Yii Application';
     <div class="container">
 
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Best Hosting Service for You</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">为您更好的服务</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
@@ -132,8 +131,8 @@ $this->title = 'My Yii Application';
     <div class="container">
 
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">About Us</h2>
-            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">关于我们</h2>
+            <p class="wow fadeInDown" style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
         <div class="row">
@@ -143,11 +142,11 @@ $this->title = 'My Yii Application';
 
             <div class="col-sm-6 wow fadeInRight">
                 <h3 class="column-title">Our Company</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam. Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
 
-                <p>Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. </p>
+                <p style="color: grey">Nulla eu neque commodo, dapibus dolor eget, dictum arcu. In nec purus eu tellus consequat ultricies. Donec feugiat tempor turpis, rutrum sagittis mi venenatis at. Sed molestie lorem a blandit congue. Ut pellentesque odio quis leo volutpat, vitae vulputate felis condimentum. </p>
 
-                <p>Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
+                <p style="color: grey">Praesent vulputate fermentum lorem, id rhoncus sem vehicula eu. Quisque ullamcorper, orci adipiscing auctor viverra, velit arcu malesuada metus, in volutpat tellus sem at justo.</p>
 
 
                 <a class="btn btn-primary" href="#">Learn More</a>
@@ -269,7 +268,7 @@ $this->title = 'My Yii Application';
 <section id="pricing">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Pricing</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">价格</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
@@ -389,7 +388,7 @@ $this->title = 'My Yii Application';
 <section id="business-stats">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Business Stats</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">前景</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
@@ -425,7 +424,7 @@ $this->title = 'My Yii Application';
 <section id="our-team">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Amazing Team</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">神奇的团队</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
@@ -507,7 +506,7 @@ $this->title = 'My Yii Application';
 <section class="testimonial-area" id="testimonial">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Testimonial</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">Testimonial</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
         <div class="row">
@@ -571,7 +570,7 @@ $this->title = 'My Yii Application';
 <section id="contact-us">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title wow fadeInDown">Contact Us</h2>
+            <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">联系我们</h2>
             <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
     </div>

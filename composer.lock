@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "da470a4794f1c4abbc9339e79599f750",
+    "content-hash": "75d5ffb7fe5a3637685fef32f7ed2e61",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -465,6 +465,39 @@
                 "url"
             ],
             "time": "2018-04-24T00:35:57+00:00"
+        },
+        {
+            "name": "kucha/ueditor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BigKuCha/yii2-ueditor-widget.git",
+                "reference": "6dc87f119a95a69a839823a2b7bd1ebae53f4c24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://files.phpcomposer.com/files/BigKuCha/yii2-ueditor-widget/6dc87f119a95a69a839823a2b7bd1ebae53f4c24.zip",
+                "reference": "6dc87f119a95a69a839823a2b7bd1ebae53f4c24",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "kucha\\ueditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "BigKuCha",
+                    "email": "nevermore1989@vip.qq.com"
+                }
+            ],
+            "description": "desc",
+            "time": "2018-05-08T05:12:22+00:00"
         },
         {
             "name": "monolog/monolog",
