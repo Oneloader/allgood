@@ -270,17 +270,19 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">价格</h2>
-            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown"  style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
-
         <div class="row">
+            <?php
+                foreach ($goods as $good):
+            ?>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
-                    <ul class="pricing">
-                        <li class="plan-header">
+                    <ul class="pricing" id="pp">
+                        <li class="plan-header alpha" style="filter:alpha(Opacity=90);-moz-opacity:0.6;opacity: 0.6;background:url('<?=$good->logo?>') no-repeat;">
                             <div class="price-duration">
                                     <span class="price">
-                                        $45
+                                        ￥<?=$good->shop_price?>
                                     </span>
                                 <span class="duration">
                                         per month
@@ -288,26 +290,25 @@
                             </div>
 
                             <div class="plan-name">
-                                Basic
+                                <?=$good->name?>
                             </div>
                         </li>
-                        <li><strong>1</strong> DOMAIN</li>
-                        <li><strong>100GB</strong> DISK SPACE</li>
-                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                        <li>SHARED SSL CERTIFICATE</li>
-                        <li><strong>10</strong> EMAIL ADDRESS</li>
-                        <li><strong>24/7</strong> SUPPORT</li>
-                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        <li style="height: 295px"><?=$good->desc?></li>
+                        <li class="plan-purchase"><a class="btn btn-primary" href="#">了解详情</a></li>
                     </ul>
                 </div>
             </div>
+            <?php endforeach;?>
+<!--            --><?php
+//                foreach ($goods as $good):
+//            ?>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
                     <ul class="pricing featured">
                         <li class="plan-header">
                             <div class="price-duration">
                                     <span class="price">
-                                        $85
+<!--                                        ￥--><?//=$good->shop_price?>
                                     </span>
                                 <span class="duration">
                                         per month
@@ -315,19 +316,14 @@
                             </div>
 
                             <div class="plan-name">
-                                Business
+<!--                                --><?//=$good->name?>
                             </div>
                         </li>
-                        <li><strong>5</strong> DOMAIN</li>
-                        <li><strong>500GB</strong> DISK SPACE</li>
-                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                        <li>SHARED SSL CERTIFICATE</li>
-                        <li><strong>30</strong> EMAIL ADDRESS</li>
-                        <li><strong>24/7</strong> SUPPORT</li>
-                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+<!--                        <li style="height: 295px">--><?//=$good->desc?><!--</li>-->
                     </ul>
                 </div>
             </div>
+<!--            --><?php //endforeach;?>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
                     <ul class="pricing">
@@ -426,7 +422,7 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">神奇的团队</h2>
-            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown"  style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
 

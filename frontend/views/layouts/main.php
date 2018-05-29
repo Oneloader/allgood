@@ -209,6 +209,11 @@ AppAsset::register($this);
             $(this).parent().addClass('active');
         });
     });
+    $(function() {
+        $(".zoomIn").hover(function(){
+            $("#pp").addClass("featured");
+        })
+    }
 </script>
 
 

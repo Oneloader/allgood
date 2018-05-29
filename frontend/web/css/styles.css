@@ -796,7 +796,7 @@ border-right: 1px solid #171717;
 color:#fff;
 }
 #pricing ul.pricing.featured li.plan-header {
-  background: #48B1DF;
+  background: #48B1DF;filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
 }
 #pricing ul.pricing.featured li.plan-header .plan-name {
   color: #fff;
