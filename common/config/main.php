@@ -13,4 +13,7 @@ return [
             'class' => \yii\rbac\DbManager::className(),
         ],
     ],
+    'layout' => 'main',
+    'language'=>'zh-CN',
+    'timeZone'=>'Asia/Shanghai',
 ];

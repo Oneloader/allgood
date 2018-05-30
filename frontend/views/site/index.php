@@ -277,18 +277,18 @@
                 foreach ($goods as $good):
             ?>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                <div class="wow zoomIn" id="big" data-wow-duration="400ms" data-wow-delay="0ms">
                     <ul class="pricing" id="pp">
-                        <li class="plan-header alpha" style="filter:alpha(Opacity=90);-moz-opacity:0.6;opacity: 0.6;background:url('<?=$good->logo?>') no-repeat;">
+                        <li class="plan-header alpha" id="xx" style="background: #222222; ;background:url('<?=$good->logo?>') no-repeat;">
+<!--                            filter:alpha(Opacity=90);-moz-opacity:0.6;opacity: 0.6;-->
                             <div class="price-duration">
                                     <span class="price">
                                         ￥<?=$good->shop_price?>
                                     </span>
                                 <span class="duration">
-                                        per month
+                                        单片价格
                                     </span>
                             </div>
-
                             <div class="plan-name">
                                 <?=$good->name?>
                             </div>
@@ -299,85 +299,6 @@
                 </div>
             </div>
             <?php endforeach;?>
-<!--            --><?php
-//                foreach ($goods as $good):
-//            ?>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
-                    <ul class="pricing featured">
-                        <li class="plan-header">
-                            <div class="price-duration">
-                                    <span class="price">
-<!--                                        ￥--><?//=$good->shop_price?>
-                                    </span>
-                                <span class="duration">
-                                        per month
-                                    </span>
-                            </div>
-
-                            <div class="plan-name">
-<!--                                --><?//=$good->name?>
-                            </div>
-                        </li>
-<!--                        <li style="height: 295px">--><?//=$good->desc?><!--</li>-->
-                    </ul>
-                </div>
-            </div>
-<!--            --><?php //endforeach;?>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
-                    <ul class="pricing">
-                        <li class="plan-header">
-                            <div class="price-duration">
-                                    <span class="price">
-                                        $125
-                                    </span>
-                                <span class="duration">
-                                        per month
-                                    </span>
-                            </div>
-
-                            <div class="plan-name">
-                                Professional
-                            </div>
-                        </li>
-                        <li><strong>10</strong> DOMAIN</li>
-                        <li><strong>2GB</strong> DISK SPACE</li>
-                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                        <li>SHARED SSL CERTIFICATE</li>
-                        <li><strong>50</strong> EMAIL ADDRESS</li>
-                        <li><strong>24/7</strong> SUPPORT</li>
-                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
-                    <ul class="pricing">
-                        <li class="plan-header">
-                            <div class="price-duration">
-                                    <span class="price">
-                                        $185
-                                    </span>
-                                <span class="duration">
-                                        per month
-                                    </span>
-                            </div>
-
-                            <div class="plan-name">
-                                Extended
-                            </div>
-                        </li>
-                        <li><strong>15</strong> DOMAIN</li>
-                        <li><strong>10GB</strong> DISK SPACE</li>
-                        <li><strong>UNLIMITED</strong> BANDWIDTH</li>
-                        <li>SHARED SSL CERTIFICATE</li>
-                        <li><strong>100</strong> EMAIL ADDRESS</li>
-                        <li><strong>24/7</strong> SUPPORT</li>
-                        <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 </section><!--/#pricing-->

@@ -4,6 +4,7 @@
  */
 $form = \yii\bootstrap\ActiveForm::begin();
 echo $form->field($model,'name')->textInput()->label('商品名称');
+echo $form->field($model,'desc')->textarea()->label('商品简介');
 echo $form->field($intro,'content')->widget('kucha\ueditor\UEditor',[])->label('商品详情');
 echo $form->field($model,'logo')->hiddenInput();
 $this->registerCssFile('@web/webuploader/webuploader.css');

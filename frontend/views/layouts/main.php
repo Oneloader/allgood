@@ -202,18 +202,21 @@ AppAsset::register($this);
 <!-- 登陆页面sctipt -->
 <script type="text/javascript" src="js/particles.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
-<script>
+<script type="text/javascript">
     $(function () {
         $('.nav').on('click', function() {
             $('.nav').parent().removeClass('active');
             $(this).parent().addClass('active');
         });
+        $('.wow').on('mouseover',function () {
+//            $(this).find('#xx').css('background','#48B1DF');
+            $(this).find('ul').addClass('featured');
+        });
+        $('.wow').on('mouseout',function () {
+//            $(this).find('#xx').css('background','#222222');
+            $(this).find('ul').removeClass('featured');
+        });
     });
-    $(function() {
-        $(".zoomIn").hover(function(){
-            $("#pp").addClass("featured");
-        })
-    }
 </script>
 
 
