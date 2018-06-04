@@ -23,13 +23,13 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">关于泉佳</h2>
-            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown" style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
         <div class="row FeatLayout">
             <div class="col-md-5 Featimg"> <img src="images/features.jpg" alt="汉瓦产品" class="img-responsive center-block" ></div>
             <div class="col-md-7">
                 <h2>我们坚持做瓦10年</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
+                <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
                 <ul class="listarrow">
                     <li><i class="fa fa-angle-double-right"></i>专业的安装团队</li>
                     <li><i class="fa fa-angle-double-right"></i>优秀的商品品质</li>
@@ -47,7 +47,7 @@
 
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">为您更好的服务</h2>
-            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown" style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
 
         <div class="row">
@@ -59,7 +59,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Hosting</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <p style="color: grey">Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
                         </div>
                     </div>
                 </div><!--/.col-md-4-->
@@ -71,7 +71,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Special Hosting</h4>
-                            <p>Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
+                            <p style="color: grey">Backed by some of the biggest names in the industry, Firefox OS is an open platform that fosters greater</p>
                         </div>
                     </div>
                 </div><!--/.col-md-4-->
@@ -83,7 +83,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Web Builder</h4>
-                            <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            <p style="color: grey">Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
                         </div>
                     </div>
                 </div><!--/.col-md-4-->
@@ -95,7 +95,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">cPanel Access</h4>
-                            <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            <p style="color: grey">Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
                         </div>
                     </div>
                 </div><!--/.col-md-4-->
@@ -107,7 +107,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">Windows</h4>
-                            <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            <p style="color: grey">Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
                         </div>
                     </div>
                 </div><!--/.col-md-4-->
@@ -119,7 +119,7 @@
                         </div>
                         <div class="media-body">
                             <h4 class="media-heading">MySQL</h4>
-                            <p>Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
+                            <p style="color: grey">Morbi vitae tortor tempus, placerat leo et, suscipit lectus. Phasellus ut euismod massa, eu eleifend ipsum.</p>
                         </div>
                     </div>
                 </div><!--/.col-md-4-->
@@ -293,7 +293,7 @@
                                 <?=$good->name?>
                             </div>
                         </li>
-                        <li style="height: 295px"><?=$good->desc?></li>
+                        <li style="height: 295px;color: grey"><?=$good->desc?></li>
                         <li class="plan-purchase"><a class="btn btn-primary" href="#">了解详情</a></li>
                     </ul>
                 </div>
@@ -358,10 +358,10 @@
                         <span>Founder</span>
                     </div>
                     <ul class="social-icons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" style="color: grey"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter" style="color: grey"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus" style="color: grey"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin" style="color: grey"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -489,7 +489,7 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">联系我们</h2>
-            <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown" style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
         </div>
     </div>
 </section><!--/#contact-us-->

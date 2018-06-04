@@ -49,12 +49,20 @@ AppAsset::register($this);
     <link href="css/style-responsive.css" rel="stylesheet" />
     <link href="css/xcharts.min.css" rel=" stylesheet">
     <link href="css/jquery-ui-1.10.4.min.css" rel="stylesheet">
+    <!--webUpload引入CSS-->
+    <link rel="stylesheet" type="text/css" href="webuploader/webuploader.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+<!--    <link rel="stylesheet" href="zTree/css/demo.css" type="text/css">-->
+    <link rel="stylesheet" href="zTree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <script type="text/javascript" src="jquery-1.4.2.js"></script>
+    <script type="text/javascript" src="jquery.ztree.core-3.x.js"></script>
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/lte-ie7.js"></script>
     <![endif]-->
+    <!--webUpload引入JS-->
+    <script type="text/javascript" src="webuploader/webuploader.js"></script>
 </head>
 <body>
 <?php $this->beginBody() ?>
