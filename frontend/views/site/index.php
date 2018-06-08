@@ -33,10 +33,10 @@
                 <ul class="listarrow">
                     <li><i class="fa fa-angle-double-right"></i>专业的安装团队</li>
                     <li><i class="fa fa-angle-double-right"></i>优秀的商品品质</li>
-                    <li><i class="fa fa-angle-double-right"></i>实在的商品价格</li>
+                    <li><i class="fa fa-angle-double-right"></i>厚道的商品价格</li>
                     <li><i class="fa fa-angle-double-right"></i>良好的服务口碑</li>
-                    <li><i class="fa fa-angle-double-right"></i></li>
-                    <li><i class="fa fa-angle-double-right"></i>Web Secutity</li>
+<!--                    <li><i class="fa fa-angle-double-right"></i></li>-->
+<!--                    <li><i class="fa fa-angle-double-right"></i>Web Secutity</li>-->
                 </ul>
             </div>
         </div>

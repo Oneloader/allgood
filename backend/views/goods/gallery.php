@@ -34,7 +34,7 @@ var uploader = WebUploader.create({
     swf: '/webuploader/Uploader.swf',
 
     // 文件接收服务端。
-    server: '$upload_url?id=$goods_id',
+    server: '$upload_url&id=$goods_id',
 
     // 选择文件的按钮。可选。
     // 内部根据当前运行是创建，可能是input元素，也可能是flash.

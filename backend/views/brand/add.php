@@ -12,7 +12,7 @@ $this->registerJsFile('@web/webuploader/webuploader.js',[
     'depends'=>\yii\web\JqueryAsset::className()
 ]);
 echo
-    <<<HTML
+<<<HTML
 <div id="uploader-demo">
     <!--用来存放item-->
     <div id="fileList" class="uploader-list"></div>

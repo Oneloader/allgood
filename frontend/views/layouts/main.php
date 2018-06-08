@@ -111,16 +111,16 @@ AppAsset::register($this);
                         <li class="scroll"><a href="#pricing" class="nav">价&emsp;格</a></li>
                         <li class="scroll"><a href="#our-team" class="nav">团&emsp;队</a></li>
                     </ul>
-                    <ul class="nav " style="list-style-type:none;float:right;">
-                        <?php
-                        if (empty(Yii::$app->user->identity->username)) {
-                            echo '<li class="scroll"><a href="'.\yii\helpers\Url::to(['site/signup']).'">注册</a></li>';
-                            echo '<li class="scroll"><a href="'.\yii\helpers\Url::to(['site/login']).'">登陆</a></li>';
-                        }else{
-                            echo '<li class="scroll"><a href="'.\yii\helpers\Url::to(['site/logout']).'">'.(Yii::$app->user->identity->username).'退出</a></li>';
-                        }
-                        ?>
-                    </ul>
+<!--                    <ul class="nav " style="list-style-type:none;float:right;">-->
+<!--                        --><?php
+//                        if (empty(Yii::$app->user->identity->username)) {
+//                            echo '<li class="scroll"><a href="'.\yii\helpers\Url::to(['site/signup']).'">注册</a></li>';
+//                            echo '<li class="scroll"><a href="'.\yii\helpers\Url::to(['site/login']).'">登陆</a></li>';
+//                        }else{
+//                            echo '<li class="scroll"><a href="'.\yii\helpers\Url::to(['site/logout']).'">'.(Yii::$app->user->identity->username).'退出</a></li>';
+//                        }
+//                        ?>
+<!--                    </ul>-->
                 </div>
             </div><!--/.container-->
         </nav><!--/nav-->

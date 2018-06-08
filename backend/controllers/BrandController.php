@@ -24,7 +24,6 @@ class BrandController extends Controller{
         $img = UploadedFile::getInstanceByName('file');
         $fileName = '/upload/'.uniqid().'.'.$img->extension;
         if ($img->saveAs(\Yii::getAlias('@webroot').$fileName,0)){
-            //七牛上传
             // 需要填写你的 Access Key 和 Secret Key
             $accessKey ="Lwgm_rH5tFEh6FxSCOtc_mF3f_WeXVx1wszIGeiO";
             $secretKey = "1jrtnbDmh2LZ-V00Pb1kXMdl4oo9Y5_Fv0ZD1O8a";

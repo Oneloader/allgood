@@ -1,13 +1,12 @@
 <html>
 <h2 class="text-center">商品管理</h2>
-<div style="padding-right: 50px;padding-bottom: 20px">
-    <form action="" method="get" style="float: left">
+<div style="padding-right: 50px;margin-bottom: 20px">
+    <form action="" method="get" style="float: left;padding-top: 20px;margin-bottom: 20px">
         商品名:<input type="text" value="" name="name">
         货号:<input type="text" value="" name="sn">
         价格:<input type="text" value="" name="sn">
         <input type="submit" value="搜索">
     </form>
-    <a class="btn btn-danger" href="<?=\yii\helpers\Url::to(['goods/recycle'])?>" style="float: right;margin-right: 40px;margin-bottom: 20px">回收站</a>
 </div>
 
 <table class="table table-bordered" id="table">
@@ -43,20 +42,14 @@
             <td><?=date('Y-m-d H:i:s',$goods->create_time)?></td>
             <td><?=$goods->view_times?></td>
             <td>
-                <?=\yii\bootstrap\Html::a('相册',['goods/gallery','goods_id'=>$goods->id],['class'=>'btn btn-warning'])?>
-                <?=\yii\bootstrap\Html::a('修改',['goods/edit','id'=>$goods->id],['class'=>'btn btn-success'])?>
+                <?=\yii\bootstrap\Html::a('还原',['goods/reduction','id'=>$goods->id],['class'=>'btn btn-success'])?>
                 <a id="del" class="btn btn-danger">删除</a>
             </td>
         </tr>
     <?php endforeach;?>
-    <tr>
-        <td colspan="14" class="text-center">
-            <a type="button" class="btn btn-primary" href="<?=\yii\helpers\Url::to(['add'])?>">添加</a>
-        </td>
-    </tr>
 </table>
 <?php
-$url = \yii\helpers\Url::to(['goods/delete']);
+$url = \yii\helpers\Url::to(['goods/redelete']);
 $js = <<<JS
     $("#table").on('click','#del',function() {
         var tr = $(this).closest('tr');

@@ -23,7 +23,7 @@ class GoodsController extends Controller{
 //        $sn = \Yii::$app->request->get('sn');
 //        $shop_price = \Yii::$app->request->get('shop_price');
 //        $model = Goods::find()->where(['like','name',$name])->andWhere(['like','sn',$sn])->andWhere(['like','shop_price',$shop_price])->all();
-        $model = Goods::find()->all();
+        $model = Goods::find()->where(['status'=>'1'])->all();
         return $this->render('index',['model'=>$model]);
     }
 
@@ -191,6 +191,23 @@ class GoodsController extends Controller{
     //删除功能
     public function actionDelete($id){
         Goods::updateAll(['status'=>-1],['id'=>$id]);
+    }
+
+    //回收站功能
+    public function actionRecycle(){
+        $model = Goods::find()->where(['status'=>'-1'])->all();
+//        var_dump($model);exit;
+        return $this->render('recycle',['model'=>$model]);
+    }
+
+    //回收站还原功能
+    public function actionReduction($id){
+        Goods::updateAll(['status'=>1],['id'=>$id]);
+    }
+
+    //回收站永久删除功能
+    public function actionRedelete($id){
+        Goods::deleteAll(['id'=>$id]);
     }
 
     public function behaviors()
