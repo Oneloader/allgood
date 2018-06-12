@@ -9,7 +9,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                        <h2 style="font-size: 32px"><b>泉佳</b> 光伏产业</h2>
+                        <h2 style="font-size: 32px"><b>宁明泉佳</b> 新能源科技</h2>
                         <p style="font-size: 46px;font-weight: bolder;letter-spacing:10px ">用薄膜太阳能改变世界</p>
                     <p style="font-size: 16px;font-weight: lighter;">CHANGE THE WORLD WITH THIN-FILM SOLAR.</p>
                         <a class="btn btn-primary btn-lg" href="#">现在进入</a>
@@ -29,14 +29,13 @@
             <div class="col-md-5 Featimg"> <img src="images/features.jpg" alt="汉瓦产品" class="img-responsive center-block" ></div>
             <div class="col-md-7">
                 <h2>我们坚持做瓦10年</h2>
-                <p style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
+                <p style="color: grey">始终如一，为您提供更好的服务与产品品质<br>让您感受到专业的团队给您带来的便捷与方便。</p>
                 <ul class="listarrow">
+                    <li><i class="fa fa-angle-double-right"></i>十年的专业老店</li>
                     <li><i class="fa fa-angle-double-right"></i>专业的安装团队</li>
                     <li><i class="fa fa-angle-double-right"></i>优秀的商品品质</li>
                     <li><i class="fa fa-angle-double-right"></i>厚道的商品价格</li>
                     <li><i class="fa fa-angle-double-right"></i>良好的服务口碑</li>
-<!--                    <li><i class="fa fa-angle-double-right"></i></li>-->
-<!--                    <li><i class="fa fa-angle-double-right"></i>Web Secutity</li>-->
                 </ul>
             </div>
         </div>
@@ -277,6 +276,8 @@
                 foreach ($goods as $good):
             ?>
             <div class="col-md-3 col-sm-6 col-xs-12">
+                <input type="hidden" value="<?=$good->id?>" name="good_id">
+                <a href="" style="text-decoration:none;">
                 <div class="wow zoomIn" id="big" data-wow-duration="400ms" data-wow-delay="0ms">
                     <ul class="pricing" id="pp">
                         <li class="plan-header alpha" id="xx" style="background: #222222; ;background:url('<?=$good->logo?>') no-repeat;">
@@ -293,10 +294,11 @@
                                 <?=$good->name?>
                             </div>
                         </li>
-                        <li style="height: 295px;color: grey"><?=$good->desc?></li>
+                        <li style="width:200px;height: 295px;color: grey;margin-left: 50px;margin-top: 50px"><?=$good->desc?></li>
                         <li class="plan-purchase"><a class="btn btn-primary" href="#">了解详情</a></li>
                     </ul>
                 </div>
+                </a>
             </div>
             <?php endforeach;?>
         </div>

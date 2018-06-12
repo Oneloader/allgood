@@ -105,7 +105,7 @@ AppAsset::register($this);
 //                        NavBar::end();
 //                        ?>
                         <li class="scroll active"><a href="#home" class="nav">首&emsp;页</a></li>
-                        <li class="scroll"><a href="#features" style="text-decoration:none;" class="nav">未&emsp;来</a></li>
+                        <li class="scroll"><a href="#features" style="text-decoration:none;" class="nav">产&emsp;品</a></li>
                         <li class="scroll"><a href="#services" class="nav">服&emsp;务</a></li>
                         <li class="scroll"><a href="#about" class="nav">关&emsp;于</a></li>
                         <li class="scroll"><a href="#pricing" class="nav">价&emsp;格</a></li>
