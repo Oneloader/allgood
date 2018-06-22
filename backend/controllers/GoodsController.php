@@ -72,6 +72,16 @@ class GoodsController extends Controller{
         }
     }
 
+    //    商品相册删除功能
+    public function actionGalleryDelete($id){
+        $re = GoodsGallery::deleteAll(['id'=>$id]);
+//        $model = new GoodsGallery();
+//        var_dump($model);exit;
+        if ($re){
+
+        }
+    }
+
 
     //处理ajax文件上传
     public function actionUploader(){

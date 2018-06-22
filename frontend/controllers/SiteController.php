@@ -2,6 +2,8 @@
 namespace frontend\controllers;
 
 use backend\models\Goods;
+use backend\models\GoodsGallery;
+use backend\models\GoodsIntro;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -212,5 +214,42 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+
+    /**
+     * 商品页
+     */
+    public function actionList2(){
+        $goods = Goods::find()->where(['status'=>1])->all();
+        return $this->render('list2',['goods'=>$goods]);
+    }
+
+    /**
+     * 商品详情页
+     */
+    public function actionGoods($id){
+        $good = Goods::findOne(['id'=>$id]);
+        $gallery = GoodsGallery::find()->where(['goods_id'=>$id])->all();
+        $intro = GoodsIntro::findOne(['goods_id'=>$id]);
+        $contents = $this->render('goods',['good'=>$good,'gallery'=>$gallery,'intro'=>$intro]);
+        //将缓存内容保存到一个静态页面
+        file_put_contents('goods.html',$contents);
+        return $this->redirect('goods.html');
+    }
+
+    //刷新页面,浏览次数加1
+    public function actionRead(){
+        $id = $_POST['id'];
+        $good = Goods::findOne(['id'=>$id]);
+        $request = Yii::$app->request;
+        if ($request->isPost){
+            $good->load($request->post());
+            if ($good->validate()){
+                $good->view_times = $good->view_times +1;
+//                var_dump($good->view_times);exit;
+                $good->save();
+                echo json_encode($good->view_times);
+            }
+        }
     }
 }

@@ -1,4 +1,4 @@
-<?php require './public/headerlist.php'?>
+
 <!-- 列表主体 start -->
 	<div class="list w1210 bc mt10">
 		<!-- 面包屑导航 start -->
@@ -37,7 +37,6 @@
 							<li><a href="">打印机</a></li>
 							<li><a href="">一体机</a></li>
 							<li><a href="">投影机</a></li>
-							</li>
 						</ul>
 					</div>
 
@@ -47,7 +46,6 @@
 							<li><a href="">路由器</a></li>
 							<li><a href="">网卡</a></li>
 							<li><a href="">交换机</a></li>
-							</li>
 						</ul>
 					</div>
 

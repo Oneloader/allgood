@@ -4,12 +4,16 @@
     <div id="fileList" class="uploader-list"></div>
     <div id="filePicker">选择图片</div>
 </div>
-<?php foreach ($model as $gal):?>
-<div>
-    <img id="img" src="<?=$gal->path?>" width="500px">
-    <a id="<?=$gal->id?>" class="btn btn-danger">删除</a>
-</div>
-<?php endforeach;?>
+<table id="table">
+    <?php foreach ($model as $gal):?>
+        <tr id="<?=$gal->id?>">
+            <td>
+                <img id="img" src="<?=$gal->path?>" width="500px">
+                <a id="del" class="btn btn-danger">删除</a>
+            </td>
+        </tr>
+    <?php endforeach;?>
+</table>
 <?php
 /**
  * @var $this \yii\web\View
@@ -21,6 +25,8 @@ $this->registerJsFile('@web/webuploader/webuploader.js',[
 ]);
 
 $upload_url = \yii\helpers\Url::to(['goods/gallery-add']);
+
+$url = \yii\helpers\Url::to(['goods/gallery-delete']);
 //var_dump($upload_url);exit;
 $js =
     <<<JS
@@ -53,5 +59,15 @@ uploader.on( 'uploadSuccess', function( file,response ) {
     //将上传成功的图片地址写入logo字段
     $('#goods-logo').val(response.url);
 });
+
+//相册AJAX异步删除
+    $("#table").on('click','#del',function() {
+        var tr = $(this).closest('tr');
+        if (confirm('确定删除?')){
+            $.get('$url',{id:tr.attr('id')},function() {
+                tr.remove();
+            })
+        }
+    })
 JS;
 $this->registerJs($js);

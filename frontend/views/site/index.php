@@ -23,7 +23,7 @@
     <div class="container">
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">关于泉佳</h2>
-            <p class="wow fadeInDown" style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown" style="color: grey">在宁明有着10年的彩钢瓦销售与服务经验，购买过相关产品的客户连接着宁明左右的几十个乡镇。 <br> 不论您的家在哪儿，我们都会将我们的产品送货到家，并只需要支付一小部分的配送费用。</p>
         </div>
         <div class="row FeatLayout">
             <div class="col-md-5 Featimg"> <img src="images/features.jpg" alt="汉瓦产品" class="img-responsive center-block" ></div>
@@ -46,7 +46,7 @@
 
         <div class="section-header">
             <h2 class="section-title wow fadeInDown" style="letter-spacing: 10px">为您更好的服务</h2>
-            <p class="wow fadeInDown" style="color: grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
+            <p class="wow fadeInDown" style="color: grey">我们的产品都是和国内一线的品牌合作，十年的好口碑，与优秀的产品质量相关，也与我们优秀的安装团队有关。 <br> </p>
         </div>
 
         <div class="row">
@@ -277,7 +277,7 @@
             ?>
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <input type="hidden" value="<?=$good->id?>" name="good_id">
-                <a href="" style="text-decoration:none;">
+                <a href="<?=\yii\helpers\Url::to(['site/goods','id'=>$good->id])?>" style="text-decoration:none;">
                 <div class="wow zoomIn" id="big" data-wow-duration="400ms" data-wow-delay="0ms">
                     <ul class="pricing" id="pp">
                         <li class="plan-header alpha" id="xx" style="background: #222222; ;background:url('<?=$good->logo?>') no-repeat;">
@@ -294,7 +294,7 @@
                                 <?=$good->name?>
                             </div>
                         </li>
-                        <li style="width:200px;height: 295px;color: grey;margin-left: 50px;margin-top: 50px"><?=$good->desc?></li>
+                        <li style="width:auto;height: 295px;color: grey;margin-top: 50px"><?=$good->desc?></li>
                         <li class="plan-purchase"><a class="btn btn-primary" href="#">了解详情</a></li>
                     </ul>
                 </div>
